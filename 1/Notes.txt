@@ -1,0 +1,5 @@
+.Net (WPF, Windows Forms, ASP.Net)
+.Net Core(UWP, ASP.Net core)
+Xamarin(iOS, Android, OS X)
+
+Microsoft visual stuido 2019 krok po kroku
