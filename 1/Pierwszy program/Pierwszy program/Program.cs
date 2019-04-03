@@ -65,6 +65,8 @@ namespace Pierwszy_program
                 Console.WriteLine("Witaj dzieciaku!");
             }
 
+            //if(string.equals()) or if(input == "+"{cw()"Wykonaj dodawanie"});
+
             Console.ReadLine(); //komentarz
         }
     }
