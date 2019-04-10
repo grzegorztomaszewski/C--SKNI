@@ -24,6 +24,14 @@ namespace obiektklasa
             Dog mopsik = new Dog();
             mopsik.Szczekaj("mopsik szczeka");
 
+            //
+            car auto1 = new car();  //konstruktor - tworzy obiekt
+            auto1.kolor = "red";    //definiowanie obiektu: kolor - red
+            auto1.marka = "audi";   //^^
+            auto1.rocznik = 2015;   //^^
+
+            auto1.Klakson("beep");
+
             Console.ReadKey();
         }
     }
