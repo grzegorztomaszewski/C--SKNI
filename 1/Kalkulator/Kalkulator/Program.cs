@@ -20,9 +20,10 @@ namespace Kalkulator
             Console.WriteLine("Wpisz pierwszą liczbę: ");
             a = Console.ReadLine();
             Console.WriteLine("Wpisz drugą liczbę: ");
+            dzieleniezero:
             b = Console.ReadLine();
-            int b1 = int.Parse(a);
-            int b2 = int.Parse(b);
+            float b1 = float.Parse(a);
+            float b2 = float.Parse(b);
             char znak1 = char.Parse(znak);
             if(znak == "+")
             {
@@ -39,14 +40,23 @@ namespace Kalkulator
                 Console.WriteLine($"Wynik mnożenia to: {b1*b2}");
             }
 
-            if(znak == "/")
+            if(znak == "/" && b2 != 0)
             {
                 Console.WriteLine($"Wynik dzielenia to: {b1/b2}");
             }
+            else{
+                Console.WriteLine("Nie dziel przez zero!");
+                goto dzieleniezero;
+            }
 
-            if(znak == "%")
+            if(znak == "%" && b2 != 0)
             {
                 Console.WriteLine($"Wynik z modulo to: {b1%b2}");
+            }
+            else
+            {
+                Console.WriteLine("Nie dziel przez zero!");
+                goto dzieleniezero;
             }
 
             Console.WriteLine("Naciśnij klawisz aby wyjść.");
