@@ -54,3 +54,4 @@ namespace Kalkulator
         }
     }
 }
+//Grzegorz Tomaszewski
