@@ -10,11 +10,11 @@ namespace obiektklasa
     {
         static void Main(string[] args)
         {
-            uzytkownik user1 = new uzytkownik();
+            Uzytkownik user1 = new Uzytkownik();
             user1.wiek = 34;
             user1.imie = "Kamil";
 
-            uzytkownik user2 = new uzytkownik();
+            Uzytkownik user2 = new Uzytkownik();
             user2.wiek = 10;
             user2.imie = "Michał";
 
@@ -32,12 +32,38 @@ namespace obiektklasa
 
             auto1.Klakson("beep");
 
+            Uzytkownik uz1 = new Uzytkownik("Szymon", 21);
+            int wartosc = uz1.ObliczSume(10, 20);
+
+            Console.WriteLine(wartosc);
+
             Console.ReadKey();
         }
     }
-    class uzytkownik
+    class Uzytkownik
     {
+        public Uzytkownik()
+        {
+
+        }
+
+        public Uzytkownik(string name)
+        {
+
+        }
+
+        public Uzytkownik(string name, int age)
+        {
+            imie = name;
+            wiek = age;
+        }
+        
         public int wiek;
         public string imie;
+
+        public int ObliczSume(int a, int b)
+        {
+            return a+b;
+        }
     }
 }
