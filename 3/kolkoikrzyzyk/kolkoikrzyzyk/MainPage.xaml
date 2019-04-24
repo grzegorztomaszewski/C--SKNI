@@ -14,5 +14,10 @@
             <RowDefinition Height="153"/>
             <RowDefinition Height="153"/>
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145"/>
+            <ColumnDefinition Width="145"/>
+            <ColumnDefinition Width="145"/>
+        </Grid.ColumnDefinitions>
     </Grid>
 </Page>
