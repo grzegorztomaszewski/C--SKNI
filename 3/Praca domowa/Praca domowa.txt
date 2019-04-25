@@ -1,0 +1,6 @@
+Podana jest tablica dwuwymiarowa char [,] w której wpisane są znaki 'X' oraz 'O'. Należy sprawdzić czy ta tablica zawiera wygraną i jeśli tak, to podać symbol, który wygrał (oczywiście mowa o grze kółko i krzyżyk).
+
+Aplikacja ma być konsolowa.
+
+Jeżeli ktoś nie pamięta tablic to dla przypomnienia: 
+https://4programmers.net/C_sharp/Tablice
