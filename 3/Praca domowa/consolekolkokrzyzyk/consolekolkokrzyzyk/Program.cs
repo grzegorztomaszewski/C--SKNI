@@ -21,18 +21,18 @@ namespace consolekolkokrzyzyk
             {
                 Console.WriteLine($"Runda {i+1}");
                 Console.WriteLine("Ruch gracza 'X'.\nPodaj swoje pole: ");
+                back1:
                 liczbaX = Convert.ToInt32(Console.ReadLine());
-                do
-                {
                     if (liczbaX >= 1 && liczbaX <= 9)
                     {
                         WstawZnakX();
                     }
                     else
                     {
-                        Console.WriteLine("Podana liczba nie mieści się w zakresie!!");
+                        Console.WriteLine("Podana liczba nie mieści się w zakresie!!\nPodaj liczbę ponownie: ");
+                    goto back1;
                     }
-                } while (liczbaX >= 1 && liczbaX <= 9); //TODO ograniczenie dla liczb innych od 1-9
+                 //TODO ograniczenie dla liczb innych od 1-9 & dla !=int
 
                 Console.WriteLine("Ruch gracza 'O'.\n Podaj swoje pole: ");
                 liczbaO = Convert.ToInt32(Console.ReadLine());
