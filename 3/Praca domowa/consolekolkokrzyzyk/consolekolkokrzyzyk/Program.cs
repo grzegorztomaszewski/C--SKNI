@@ -12,7 +12,7 @@ namespace consolekolkokrzyzyk
             int liczbaO;
             bool winner = true;
 
-            Console.WriteLine("Witaj w grze kółko i krzyżyk.");
+        Console.WriteLine("Witaj w grze kółko i krzyżyk.");
             Console.WriteLine("Pole do gry wygląda następująco:");
             Console.WriteLine("   1.[0,0]   2.[1,0]   3.[2,0]\n   4.[0,1]   5.[1,1]   6.[2,1]\n   7.[0,2]   8.[1,2]   9.[2,2]");
             Console.WriteLine("Zaczyna gracz 'X'.");
@@ -32,7 +32,6 @@ namespace consolekolkokrzyzyk
                         Console.WriteLine("Podana liczba nie mieści się w zakresie!!\nPodaj liczbę ponownie: ");
                     goto back1;
                     }
-                 //TODO ograniczenie dla liczb innych od 1-9 & dla !=int
 
                 Console.WriteLine("Ruch gracza 'O'.\n Podaj swoje pole: ");
                 liczbaO = Convert.ToInt32(Console.ReadLine());
@@ -83,9 +82,8 @@ namespace consolekolkokrzyzyk
             }
 
             //zabezpieczenia:
-            //jeśli zamast liczby od 1-9 podany zostanie string zwróć komunikat
             //jesli wybrany numer jest juz zajety daj komunikat i wpisz liczbe jeszcze raz
-            //ogarnąć zasięg tablicy
+            //zwróć komunikat jeśli liczbaX/liczbaO != int
 
             void WstawZnakX()
             {
