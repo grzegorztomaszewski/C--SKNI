@@ -82,8 +82,8 @@ namespace consolekolkokrzyzyk
             }
 
             //zabezpieczenia:
-            //jesli wybrany numer jest juz zajety daj komunikat i wpisz liczbe jeszcze raz
-            //zwróć komunikat jeśli liczbaX/liczbaO != int
+            //TODO jesli wybrany numer jest juz zajety daj komunikat i wpisz liczbe jeszcze raz
+            //TODO zwróć komunikat jeśli liczbaX/liczbaO != int
 
             void WstawZnakX()
             {
