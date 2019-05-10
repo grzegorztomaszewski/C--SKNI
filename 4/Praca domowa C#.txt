@@ -1,0 +1,2 @@
+Trzeba napisać 2 funkcje, które wygenerują wyjątek (w każdej funkcji 1 wyjątek) i wyjątki zostaną obsłużone.
+Wyjątki muszą być obsłużone szczegółowo tzn. musisz znać konkretny wyjątek jaki zostanie rzucony a nie "Exception". 
