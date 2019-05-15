@@ -20,16 +20,16 @@
             <ColumnDefinition Width="145"/>
         </Grid.ColumnDefinitions>
         <!---TOP-->
-        <Button x:Name="B1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="Button_Click"></Button>
-        <Button x:Name="B2" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="Button_Click_3"></Button>
-        <Button x:Name="B3" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen"></Button>
+        <Button x:Name="B1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B2" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B3" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
         <!---MID-->
-        <Button x:Name="B4" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="Button_Click_1"></Button>
-        <Button x:Name="B5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen"></Button>
-        <Button x:Name="B6" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen"></Button>
+        <Button x:Name="B4" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B5" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B6" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
         <!---BOT-->
-        <Button x:Name="B7" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="Button_Click_2"></Button>
-        <Button x:Name="B8" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen"></Button>
-        <Button x:Name="B9" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen"></Button>
+        <Button x:Name="B7" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B8" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
+        <Button x:Name="B9" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Height="143" Margin="5" Background="LightPink" BorderBrush="LimeGreen" Click="ClickButton" FontSize="100"></Button>
     </Grid>
 </Page>

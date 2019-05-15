@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 //Szablon elementu Pusta strona jest udokumentowany na stronie https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x415
 
@@ -28,6 +29,39 @@ namespace kolkoikrzyzyk
         {
             this.InitializeComponent();
         }
+
+        private async void ClickButton(object sender, RoutedEventArgs e)
+        {
+
+            Button button = sender as Button;
+
+            var x = Grid.GetRow(button);
+            var y = Grid.GetColumn(button);
+
+            if (game.AddToTabb(x, y, mark)) //niech gra doda na pozycji x/y znak(mark), który użytkownik ma. Zwraca boola. jeżeli udało się udać, to wykonaj if.
+            {
+                button.Content = mark;
+
+                if (mark == 'X')
+                {
+                    mark = 'O';
+                }
+                else
+                {
+                    mark = 'X';
+                }
+            }
+
+            if (game.CheckGameStatus())
+            {
+                var a = game.WinnerMark;
+
+                var dialog = new MessageDialog($"Wygrał: {game.WinnerMark}");
+                await dialog.ShowAsync();
+                ClearGame();
+            }
+        }
+
         private void ClearGame()    //czyszczenie gry
         {
             game = new Game2();
@@ -43,6 +77,11 @@ namespace kolkoikrzyzyk
             B7.Content = "";
             B8.Content = "";
             B9.Content = "";
+        }
+
+        private void B1_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 
