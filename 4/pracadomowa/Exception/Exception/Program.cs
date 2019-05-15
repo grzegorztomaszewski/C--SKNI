@@ -13,6 +13,9 @@ namespace Exceptions
             //wypisz na konsole tekst " złapano exception
             //w main'ie odpalenie metody, całosć w klasie"
 
+            Class1 class1 = new Class1();
+            class1.Metoda1();
+            class1.Metoda2();
 
         }
     }
