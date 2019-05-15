@@ -81,6 +81,16 @@ namespace kolkoikrzyzyk
             }
             return false;
         }
+
+        public bool CheckGameStatus()   //sprawdza kto wygrał (metoda publiczna)
+        {
+            if (CheckRows() || CheckCols() ||CheckCross() || CheckFull())
+            {
+                return true;
+            }
+            return false;
+        }
+
         private bool CheckCross()   //sprawdza skosy
         {
             char mark = 'X';
