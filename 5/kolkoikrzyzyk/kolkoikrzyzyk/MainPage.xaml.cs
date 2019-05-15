@@ -98,7 +98,19 @@ namespace kolkoikrzyzyk
                     mark = 'O';
             }
             return false;
-        }
 
+        }
+        private bool CheckFull()    //sprawdzenie remisu
+        {
+            foreach (char x in gameTab)
+            {
+                if (!Char.IsLetter(x))
+                {
+                    return false;
+                }
+            }
+            WinnerMark = 'D';
+            return true;
+        }
     }
 }
