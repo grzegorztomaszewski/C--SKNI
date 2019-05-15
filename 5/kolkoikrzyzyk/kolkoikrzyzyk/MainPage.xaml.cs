@@ -22,9 +22,27 @@ namespace kolkoikrzyzyk
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Game2 game = new Game2();
+        char mark = 'X';
         public MainPage()
         {
-            this.InitializeComponent();        
+            this.InitializeComponent();
+        }
+        private void ClearGame()    //czyszczenie gry
+        {
+            game = new Game2();
+
+            B1.Content = "";
+            B2.Content = "";
+            B3.Content = "";
+
+            B4.Content = "";
+            B5.Content = "";
+            B6.Content = "";
+
+            B7.Content = "";
+            B8.Content = "";
+            B9.Content = "";
         }
     }
 
